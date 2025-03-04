@@ -4,6 +4,8 @@ def guess_the_number():
     # This keeps track of the best score across multiple rounds
     global high_score
     print("Welcome to 'Guess the Number'!")
+    print("Try to guess the number in the fewest attempts possible.")
+    print("If you set a new high score, it will be recorded!")
 
     # Ask for the player's name and age
     name = input("Please enter your name: ")
@@ -70,3 +72,6 @@ high_score = None
 
 # Start the game
 guess_the_number()
+if __name__ == "__main__":
+    guess_the_number()
+    print(f"The current high score is: {high_score} attempts.")
